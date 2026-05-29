@@ -1,0 +1,14 @@
+verification_logs.db
+
+input_data/
+accepted_data/
+rejected_data/
+
+__pycache__/
+*.pyc
+
+venv/
+.venv/
+
+.vscode/
+.idea/
