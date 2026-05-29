@@ -20,7 +20,7 @@ This project simulates a backend utility for an Image Recognition maintenance en
 
 1. **Clone the repository:**
    git clone [https://github.com/cvzary/automated-image-qc.git](https://github.com/cvzary/automated-image-qc.git)
-   cd Image-Dataset-Validator
+   cd Automated-Image-QC
 
 2. **Install requirements:**
     pip install opencv-python
