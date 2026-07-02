@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: validator_user
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: validator_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=validator_db
+      - DB_USER=validator_user
+      - DB_PASSWORD=secretpassword
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
