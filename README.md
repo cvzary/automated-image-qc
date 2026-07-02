@@ -27,7 +27,7 @@ Thanks to Docker, you don't need to install Python, PostgreSQL, or any libraries
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/cvzary/automated-image-qc.git](https://github.com/cvzary/automated-image-qc.git)
+git clone https://github.com/cvzary/automated-image-qc.git
 cd automated-image-qc
 ```
 
